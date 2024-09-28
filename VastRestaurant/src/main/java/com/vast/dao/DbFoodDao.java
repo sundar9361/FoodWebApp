@@ -103,7 +103,7 @@ public class DbFoodDao implements IFoodDao {
 		return set;
 	}
 
-	public void closeConnection(Connection con) {
+	private void closeConnection(Connection con) {
 		try {
 			con.close();
 			logger.debug("Connection Closed..");

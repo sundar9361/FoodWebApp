@@ -19,7 +19,7 @@
              <div class="menu-sec">
                <nav>
                     <ul>  
-                        <li>Menu</li>
+                        <li>Home</li>
                         <li>Log In</li>
                         <li>Sign Up</li>
                         <li><button>ORDER NOW</button></li>

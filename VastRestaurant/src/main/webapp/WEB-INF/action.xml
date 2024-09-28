@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<actions>
+    <action uri="/viewvegfoods" class="com.vast.web.ViewAllVegFoods"/>
+    <action uri="/viewnonvegfoods" class="com.vast.web.ViewAllNonVegFoods"/>
+</actions>

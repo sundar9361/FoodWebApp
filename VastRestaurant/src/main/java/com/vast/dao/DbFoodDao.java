@@ -71,9 +71,9 @@ public class DbFoodDao implements IFoodDao {
 	}
 
 	@Override
-	public Set<Food> getALlNonVegFood() {
+	public Set<Food> getAllNonVegFood() {
 		Set<Food> set = new HashSet<Food>();
-		Connection con = null;
+		Connection con=null;
 		Food food = null;
 		try {
 			con = DriverManager.getConnection(rb.getString("url"), rb.getString("user"), rb.getString("pwd"));
@@ -111,5 +111,19 @@ public class DbFoodDao implements IFoodDao {
 			logger.error(e.getMessage());
 		}
 	}
+	
+//	private void closeConnection(Connection con) {
+//	    if (con != null) {
+//	        try {
+//	            con.close();
+//	            logger.debug("Connection closed..");
+//	        } catch (SQLException e) {
+//	            logger.error("Failed to close connection: " + e.getMessage());
+//	        }
+//	    } else {
+//	        logger.warn("Attempted to close a null connection.");
+//	    }
+//	}
+
 
 }

@@ -7,6 +7,6 @@ import com.vast.vo.Food;
 public interface IFoodDao {
 	
 	Set<Food> getAllVegFood();
-	Set<Food> getALlNonVegFood();
+	Set<Food> getAllNonVegFood();
 
 }

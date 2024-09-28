@@ -11,10 +11,9 @@
     <link href="vast.css" rel="stylesheet"/>
 </head>
 <body>
-     <article>
-    <h2 style="text-align: center; margin-top: 100px;">Non-Veg Foods Menu</h2>
-    <table border="1" width="80%" align="center" cellpadding="10">
-        
+    <article class="article">
+        <h2>Non-Veg Foods Menu</h2>
+        <table class="table">
             <tr>
                 <th>Food ID</th>
                 <th>Food Name</th>
@@ -22,21 +21,19 @@
                 <th>Rating</th>
             </tr>
             <%
-            Set<Food> set =(Set<Food>)request.getAttribute("nonvegfood");
-			
-			if (null != set) {
-				for (Food food : set) {
-					out.println("<tr>");
-					out.println("<td>" + food.getFoodId() + "</td>");
-					out.println("<td>" + food.getFoodName() + "</td>");
-					out.println("<td>" + food.getFoodPrice() + "</td>");
-					out.println("<td>" + food.getFoodRating() + "</td>");
-					out.println("</tr>");
-				}
-			}
-			%>
-        
-    </table>
-</article>
+            Set<Food> set = (Set<Food>)request.getAttribute("nonvegfood"); 
+            if (null != set) {
+                for (Food food : set) {
+                    out.println("<tr>");
+                    out.println("<td>" + food.getFoodId() + "</td>");
+                    out.println("<td>" + food.getFoodName() + "</td>");
+                    out.println("<td>" + food.getFoodPrice() + "</td>");
+                    out.println("<td>" + food.getFoodRating() + "</td>");
+                    out.println("</tr>");
+                }
+            }
+            %>
+        </table>
+    </article>
 </body>
 </html>

@@ -11,7 +11,7 @@ public class ViewAllNonVegFoods implements Action{
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
 		IFoodDao dao = DbFoodDao.getDaoInstance();
-		request.setAttribute("nonvegfood", dao.getAllVegFood());
+		request.setAttribute("nonvegfood", dao.getAllNonVegFood());
 		return "AllNonVegFoods.jsp";
 	}
 	

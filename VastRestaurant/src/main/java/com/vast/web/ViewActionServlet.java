@@ -26,7 +26,7 @@ import com.vast.dao.IFoodDao;
 @WebServlet("/ViewActionServlet")
 public class ViewActionServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	Logger logger = Logger.getLogger("vast");
+	static Logger logger = Logger.getLogger("vast");
        
     
     public ViewActionServlet() {
@@ -72,8 +72,9 @@ public class ViewActionServlet extends HttpServlet {
 				Action obj = (Action)clazz.newInstance();
 				instanceMap.put(cls, obj);
 			} catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				logger.debug(e.getMessage());
+				logger.error(e.getMessage());
+				
 			}
 		}
 		
@@ -96,7 +97,7 @@ public class ViewActionServlet extends HttpServlet {
 				eventMap.put(uri,cls);
 			}
 		} catch (ParserConfigurationException | SAXException | IOException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		return eventMap;
 	}

@@ -17,7 +17,7 @@
 		</div>
 		<div class="bottombar">
 			<div class="logo">
-				<h1>Vast Hotel</h1>
+				<h1 style="font-style: italic;">VAST RESTAURANT🥤👨‍🍳</h1>
 			</div>
 			<div class="menu-sec">
 				<nav>

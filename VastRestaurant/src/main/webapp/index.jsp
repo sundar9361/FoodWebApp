@@ -36,7 +36,7 @@
                 <td>
                     <div class="veg-section">
                         <img src="Images/veg.jpg" alt="Veg Food" class="food-image">
-                        <button  class="button-veg" onclick="window.location.href='veg-food.html'">View Veg Food</button>
+                        <button  class="button-veg" onclick="window.location.href='viewvegfoods'">View Veg Food</button>
                     </div>
                 </td>
 
@@ -44,7 +44,7 @@
                 <td>
                     <div class="non-veg-section">
                         <img src="Images/nonveg.jpg" alt="Non-Veg Food" class="food-image">
-                        <button class="button-nonveg" onclick="window.location.href='non-veg-food.html'">View Non-Veg Food</button>
+                        <button class="button-nonveg" onclick="window.location.href='viewnonvegfoods'">View Non-Veg Food</button>
                     </div>
                 </td>
             </tr>
